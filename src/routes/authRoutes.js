@@ -1,9 +1,12 @@
 import express from "express";
 
+// Controllers
+import { login, signup, getUsers } from "../controllers/authController.js";
+
 const router = express.Router();
 
-router.get("/wassup", async (req, res) => {
-    return res.status(200).json({ isSuccess: true, message: "Wassup~" });
-})
+router.post("/signup", signup);
+router.get("/login", login);
+router.get("/users", getUsers)
 
 export default router;
