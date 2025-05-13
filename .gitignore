@@ -1,0 +1,21 @@
+#Node modules
+node_modules/
+
+# dotenv environment variables file
+.env
+
+# Logs
+logs
+*.log
+
+# VS Code directories
+.vscode/
+.history/
+
+# Build output
+dist/
+build/
+
+# OS-specific
+.DS_Store
+Thumbs.db
